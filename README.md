@@ -8,7 +8,8 @@ The repository contains subdirectories for each challenge that I have completed.
 
 Here are the challenges that I have completed so far:
 
-- [Challenge 1: Product Preview Card Component](./product-preview-card-component/)
+- [Challenge 1: Product Preview Card Component](./product-preview-card-component/) ([Live](https://product-card-sreeh.netlify.app/))
+- [Challenge 1: Results Summary Component](./results-summary-component/) ([Live](https://results-summary-sreeh.netlify.app/))
 
 ## Technologies Used
 

@@ -1,0 +1,135 @@
+:root {
+  /* Primary */
+  --main-bg-color: hsl(233, 47%, 7%);
+  --card-bg-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+
+  /* Neutral */
+  --white-heading: hsl(0, 0%, 100%);
+  --white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --white-stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--card-bg-color);
+  max-width: 1100px;
+}
+
+.content {
+  padding: 4rem 8rem 4rem 4rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 2rem;
+}
+
+.content h1 {
+  color: var(--white-heading);
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.content span {
+  color: var(--accent-color);
+}
+
+.content p {
+  color: var(--white-paragraph);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+  margin-top: 2rem;
+}
+
+.stat-data {
+  color: var(--white-heading);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.stat-type {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--white-stat-heading);
+  font-size: 0.8rem;
+}
+
+picture {
+  background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: 100%;
+  overflow: hidden;
+  background-color: var(--accent-color);
+  background-blend-mode: multiply;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    padding: 2rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  picture {
+    grid-row: 1;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.attribution {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  color:aliceblue;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
