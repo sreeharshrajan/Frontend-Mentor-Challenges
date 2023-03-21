@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .fylo__header-logo {
+  cursor: pointer;
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  padding-top: 2rem;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 3rem;
+}
+
+header nav ul li a {
+  color: hsl(238, 22%, 44%);
+  text-decoration: none;
+  position: relative;
+}
+
+header nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background-color: hsl(224, 93%, 58%);
+  position: absolute;
+  border-radius: 1rem;
+  bottom: -0.3rem;
+  left: 50%;
+  transition: 0.4s;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.fylo__section {
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.fylo__section .fylo__section-left,
+.fylo__section .fylo__section-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.fylo__section-left h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.fylo__section-left p {
+  color: hsl(243, 87%, 12%);
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+
+form {
+  display: flex;
+  position: relative;
+}
+
+.fylo__section-left form input {
+  min-width: 20rem;
+  margin-right: 2rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 1px solid rgb(65, 65, 65);
+  outline: none;
+}
+
+.fylo__section-left form input:focus {
+  border-color: hsla(224, 93%, 58%, 0.6);
+}
+
+.fylo__section-left form input:invalid {
+  border-color: #cd5c5c;
+}
+
+.fylo__section-left form input:invalid + span::after {
+  content: "Please check your email";
+  color: #cd5c5c;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  font-size: 0.7em;
+}
+
+.fylo__section .fylo__section-left form button {
+  width: 10rem;
+  padding: 0.9rem 1.5rem;
+  margin-top: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.3rem;
+  background-color: hsl(224, 93%, 58%);
+  box-shadow: 0px 3px 7px rgb(10 10 10 / 55%);
+}
+
+.fylo__section .fylo__section-left form button:hover {
+  background-color: hsl(224, 100%, 62%);
+}
+
+.fylo__section-right img {
+  width: 90%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fylo__section-two::before {
+  content: url(../images/bg-curve-desktop.svg);
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  top: -6rem;
+  z-index: -1;
+}
+
+.fylo__section-two {
+  position: relative;
+  background-color: rgb(248, 248, 254);
+  padding-bottom: 7rem;
+  margin-bottom: 0;
+}
+
+.fylo__section-two a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.fylo__section-two a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 0.1rem;
+  background-color: hsl(170, 45%, 43%);
+}
+
+.fylo__section-two a:hover {
+  color: hsl(170, 31%, 60%);
+}
+
+.fylo__section-two a:hover::before {
+  background-color: hsl(170, 31%, 60%);
+}
+
+.card {
+  background-color: white;
+  width: 70%;
+  padding: 2rem;
+  box-shadow: 0px 3px 7px rgb(10 10 10 / 55%);
+  margin-top: 3rem;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+.card .user {
+  display: flex;
+}
+
+.card .user img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.card .user .name {
+  color: hsl(243, 87%, 12%);
+  font-size: 0.95em;
+}
+
+.fylo__section-three {
+  background-color: hsl(238, 22%, 44%);
+  padding: 4rem 3rem;
+  margin-bottom: 0;
+}
+
+.fylo__section-three .fylo__section-left h1 {
+  color: white;
+}
+
+.fylo__section-three .fylo__section-left p {
+  color: white;
+}
+
+.fylo__section-three .fylo__section-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 7rem;
+}
+
+.fylo__section-three .fylo__section-right input {
+  width: 75%;
+  border: 1px solid rgb(65, 65, 65);
+  min-width: 15rem;
+  margin-right: 2rem;
+  padding: 0.7rem;
+  outline: none;
+}
+
+.fylo__section-three .fylo__section-right form input:focus {
+  border-color: hsla(224, 93%, 58%, 0.6);
+}
+
+.fylo__section-three .fylo__section-right form input:invalid {
+  border-color: #cd5c5c;
+}
+
+.fylo__section-three .fylo__section-right form input:invalid + span::after {
+  content: " Please check your email";
+  color: #cd5c5c;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  font-size: 0.7em;
+}
+
+.fylo__section-three .fylo__section-right form button {
+  min-width: 10rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.3rem;
+  background-color: hsl(224, 93%, 58%);
+  box-shadow: 0px 3px 7px rgb(10 10 10 / 55%);
+}
+
+.fylo__section-three .fylo__section-right form button:hover {
+  background-color: hsl(224, 100%, 62%);
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  padding: 4rem 3rem 2rem;
+}
+
+footer .fylo__footer-logo {
+  width: 10rem;
+  filter: brightness(0) invert(1);
+  margin-bottom: 2rem;
+}
+
+footer .fylo__footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fylo__footer-content .fylo__footer-contact .contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.fylo__footer-content > * {
+  margin-bottom: 3rem;
+}
+
+.fylo__footer-content .fylo__footer-contact .contact-info img {
+  margin-right: 1rem;
+}
+
+.fylo__footer-content .fylo__footer-contact .contact-info p {
+  color: #fff;
+}
+
+.fylo__footer-content .fylo__footer-links ul {
+  list-style: none;
+}
+
+.fylo__footer-content .fylo__footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.fylo__footer-content .fylo__footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.fylo__footer-content .fylo__footer-links ul li a:hover {
+  color: hsl(238, 22%, 44%);
+}
+
+/* ------ MEDIA QUERIES --------- */
+@media only screen and (max-width: 1024px) {
+  .fylo__section-left form {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .fylo__section {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  header .fylo__header-logo {
+    margin-left: 1rem;
+  }
+
+  header nav ul li {
+    margin-right: 1rem;
+  }
+
+  header .fylo__header-logo img {
+    width: 7rem;
+  }
+
+  .fylo__section .fylo__section-right {
+    order: -1;
+  }
+
+  .three .fylo__section-right {
+    order: 1 !important;
+  }
+
+  .fylo__section .fylo__section-right,
+  .fylo__section .fylo__section-left {
+    align-items: center;
+  }
+
+  .fylo__section-left > h1,
+  .fylo__section-left > p {
+    text-align: center;
+  }
+
+  .fylo__section-left form {
+    align-items: center;
+  }
+
+  .section .fylo__section-left form button {
+    border: 0;
+    min-width: 20rem;
+    padding: 0.7rem;
+  }
+
+  .fylo__section-left form input {
+    width: 75%;
+    min-width: 20rem;
+    margin-right: 0rem;
+  }
+
+  .fylo__section-three .fylo__section-right form {
+    margin-left: 0rem;
+    align-items: center;
+  }
+
+  .fylo__section-three .fylo__section-right input {
+    width: 75%;
+    min-width: 20rem;
+    margin-right: 0rem;
+    padding: 0.7rem;
+  }
+
+  .fylo__section-three .fylo__section-right form button {
+    min-width: 20rem;
+    padding: 0.7rem;
+  }
+
+  footer .fylo__footer-content {
+    flex-direction: column;
+  }
+
+  .fylo__section-left form input:invalid + span::after {
+    content: "Please check your email";
+    color: #cd5c5c;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    font-size: 0.7em;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
