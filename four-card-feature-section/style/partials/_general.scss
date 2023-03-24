@@ -1,0 +1,39 @@
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-body;
+  background-color: $neutral-very-light-gray;
+  padding: 4rem 0;
+}
+
+h1 {
+  font-weight: $font-weight-extralight;
+}
+
+h1,
+h2 {
+  font-size: 1.5rem;
+}
+
+h2,
+h3 {
+  font-weight: $font-weight-semibold;
+}
+
+h1,
+h2,
+h3 {
+  color: $neutral-very-dark-blue;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+p {
+  color: $neutral-grayish-blue;
+}
+
+img {
+  width: 3rem;
+}

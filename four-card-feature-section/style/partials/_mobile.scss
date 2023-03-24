@@ -1,0 +1,65 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 20rem;
+}
+
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.card {
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 0.3rem;
+
+  &__heading {
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: 13px;
+    margin-bottom: 2rem;
+  }
+
+  &__img-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.first {
+  border-top: 4px solid $primary-cyan;
+}
+.second {
+  border-top: 4px solid $primary-red;
+}
+.third {
+  border-top: 4px solid $primary-orange;
+}
+.fourth {
+  border-top: 4px solid $primary-blue;
+}
+
+.desktop-design {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

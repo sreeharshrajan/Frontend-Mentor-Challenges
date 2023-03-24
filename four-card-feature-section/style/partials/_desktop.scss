@@ -1,0 +1,24 @@
+@media (min-width: $desktop) {
+  .top-content {
+    p {
+      width: 34rem;
+    }
+  }
+
+  .bottom-content {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90vw;
+  }
+  .card {
+    width: 20rem;
+  }
+
+  .first,
+  .fourth {
+    align-self: center;
+  }
+}
