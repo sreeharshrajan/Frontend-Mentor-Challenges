@@ -1,4 +1,4 @@
-# Frontend Mentor Challenges
+# Frontend Mentor Challenges 2023
 
 This repository contains my solutions to the coding challenges from [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor is a platform that provides coding challenges to help you improve your front-end coding skills.
 
@@ -17,9 +17,13 @@ Here are the challenges that I have completed so far:
 - [Challenge 7: Testimonials Grid Section](./testimonials-grid-section/) ([Live](https://testimonials-grid-sreeh.netlify.app/))
 - [Challenge 8: Fylo landing page with two column layout](./fylo-landing-page-with-two-column-layout/) ([Live](https://fylo-landing-sreeh.netlify.app/))
 - [Challenge 9: Base Apparel Coming Soon](./base-apparel-coming-soon) ([Live](https://base-apparel-sreeh.netlify.app/))
+- [Challenge 10:Four card feature section](./four-card-feature-section) ([Live](https://four-card-sreeh.netlify.app/))
 
 ## Technologies Used
 
-I have used HTML and CSS to create a responsive website. I have also used the following tools :
+I have used HTML, CSS and Javascript to create a responsive website. I have also used the following tools :
 
 - [Google Fonts](https://fonts.google.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [SASS](https://sass-lang.com/)
+- [BEM Naming Convention](https://en.bem.info/methodology/naming-convention/)
