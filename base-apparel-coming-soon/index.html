@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="home" id="home">
+      <div class="logo">
+        <img
+          class="logo__img"
+          src="./images/logo.svg"
+          alt="Base Apparel logo"
+        />
+      </div>
+
+      <div class="picture">
+        <picture>
+          <source
+            srcset="./images/hero-mobile.jpg"
+            media="screen and (max-width: 700px)"
+          />
+          <img
+            src="./images/hero-desktop.jpg"
+            alt="Base Apparel hero -dektop"
+          />
+        </picture>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <h1 class="header__title">
+            We're <span class="header__title__distinction">coming soon</span>
+          </h1>
+          <p class="header__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+
+        <form autocomplete="off" class="form">
+          <div class="form__email">
+            <input
+              class="email__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <button type="submit" class="email__submit">
+              <img src="././images/icon-arrow.svg" alt="" />
+            </button>
+            <label class="form__error-icon" for="email">
+              <img src="././images/icon-error.svg" alt="" />
+            </label>
+          </div>
+          <small class="form__error">Please provide a valid email</small>
+        </form>
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/sreeharshrajan">Sreeharsh K</a>.
+          </p>
+        </footer>
+      </div>
+    </section>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

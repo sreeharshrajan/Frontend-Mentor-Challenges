@@ -9,7 +9,14 @@ The repository contains subdirectories for each challenge that I have completed.
 Here are the challenges that I have completed so far:
 
 - [Challenge 1: Product Preview Card Component](./product-preview-card-component/) ([Live](https://product-card-sreeh.netlify.app/))
-- [Challenge 1: Results Summary Component](./results-summary-component/) ([Live](https://results-summary-sreeh.netlify.app/))
+- [Challenge 2: Results Summary Component](./results-summary-component/) ([Live](https://results-summary-sreeh.netlify.app/))
+- [Challenge 3: QR Code Component](./qr-code-component/) ([Live](https://qr-code-sreeh.netlify.app/))
+- [Challenge 4: Order Summary Component](./order-summary-component/) ([Live](https://order-summary-sreeh.netlify.app/))
+- [Challenge 5: Tip Calculator App](./tip-calculator-app/) ([Live](https://tip-calculator-sreeh.netlify.app/))
+- [Challenge 6: Stats Preview Card Component](./stats-preview-card-component/) ([Live](https://stats-preview-sreeh.netlify.app/))
+- [Challenge 7: Testimonials Grid Section](./testimonials-grid-section/) ([Live](https://testimonials-grid-sreeh.netlify.app/))
+- [Challenge 8: Fylo landing page with two column layout](./fylo-landing-page-with-two-column-layout/) ([Live](https://fylo-landing-sreeh.netlify.app/))
+- [Challenge 9: Base Apparel Coming Soon](./base-apparel-coming-soon) ([Live](https://base-apparel-sreeh.netlify.app/))
 
 ## Technologies Used
 
