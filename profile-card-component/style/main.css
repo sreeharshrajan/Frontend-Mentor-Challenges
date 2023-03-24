@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*----------------------------
+  Functions
+----------------------------*/
+/*----------------------------
+	Vars
+----------------------------*/
+/*----------------------------
+	Visually hidden helper
+----------------------------*/
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/*----------------------------
+	Base
+----------------------------*/
+html {
+  font-size: 112.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/*----------------------------
+	Create Background effect
+----------------------------*/
+.component-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+  background: hsl(185, 75%, 39%);
+  z-index: -1;
+}
+.component-wrapper:before, .component-wrapper:after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.component-wrapper:before {
+  top: 0;
+  left: 0;
+  background: url("../images/bg-pattern-top.svg") no-repeat bottom right;
+}
+.component-wrapper:after {
+  top: 100%;
+  left: 100%;
+  background: url("../images/bg-pattern-bottom.svg") no-repeat top left;
+}
+
+/*----------------------------
+	Component Example Page layout
+----------------------------*/
+.component-wrapper__main {
+  flex-grow: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component-wrapper__footer {
+  font-size: 12/18rem;
+  text-align: center;
+  padding: 1rem;
+  align-self: center;
+  text-shadow: 0 0 6/18rem #fff;
+}
+.component-wrapper__footer > * {
+  margin: 0;
+}
+
+.attribution-link {
+  color: hsl(228, 45%, 44%);
+}
+
+/*----------------------------
+	Profile Card component
+----------------------------*/
+.c-profile-card {
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  max-width: 360/18rem;
+  box-shadow: 0 4rem 4rem -2rem #14808a;
+}
+
+.c-profile-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 26/18rem 1rem;
+  padding-top: 140/18rem;
+  color: hsl(227, 10%, 46%);
+}
+.c-profile-card__header:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 140/18rem;
+  background: url("/images/bg-pattern-card.svg") no-repeat center;
+  background-size: auto;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.c-profile-card__avatar {
+  border-radius: 50%;
+  order: 1;
+  margin-top: -50/18rem;
+  border: 5/18rem solid white;
+  z-index: 1;
+}
+
+.c-profile-card__title {
+  order: 2;
+  margin-top: 26/18rem;
+}
+
+.c-profile-card__name,
+.c-profile-card__age {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.c-profile-card__name {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.c-profile-card__age {
+  margin-top: 6/18rem;
+  font-weight: 400;
+}
+
+.c-profile-card__location {
+  font-size: 14/18rem;
+  order: 3;
+  margin-top: 12/18rem;
+  margin-bottom: 6/18rem;
+}
+
+.c-profile-card__stats-list {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 26/18rem 1rem;
+}
+.c-profile-card__stats-list > * {
+  list-style-type: none;
+  position: relative;
+}
+.c-profile-card__stats-list > *::before {
+  content: "​";
+  height: 0;
+  display: block;
+}
+.c-profile-card__stats-list:before {
+  content: "";
+  height: 1px;
+  background: hsl(0, 0%, 59%);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.c-profile-card__stats-list-item {
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+  margin: 6/18rem;
+}
+.c-profile-card__stats-list-item:first-of-type {
+  margin-left: 0;
+}
+.c-profile-card__stats-list-item:last-of-type {
+  margin-right: 0;
+}
+
+.c-profile-card__stat-number,
+.c-profile-card__stat-label {
+  display: block;
+}
+
+.c-profile-card__stat-number {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.c-profile-card__stat-label {
+  font-size: 12/18rem;
+  margin-top: 6/18rem;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=main.css.map */

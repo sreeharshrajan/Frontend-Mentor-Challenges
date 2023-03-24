@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(0, 0%, 100%);
+      }
+    </style>
+  </head>
+  <body class="component-wrapper">
+    <header>
+      <h1 class="sr-only">Profile card example</h1>
+    </header>
+    <main class="component-wrapper__main">
+      <article class="c-profile-card">
+        <header class="c-profile-card__header">
+          <div class="c-profile-card__title">
+            <h2 class="c-profile-card__name">Victor Crest</h2>
+            <p class="c-profile-card__age">
+              <span class="sr-only">Age</span>26
+            </p>
+          </div>
+          <p class="c-profile-card__location">London</p>
+          <img
+            src="./images/image-victor.jpg"
+            alt="Victor"
+            class="c-profile-card__avatar"
+          />
+        </header>
+        <section>
+          <h3 class="sr-only">Profile statistics</h3>
+          <ul class="c-profile-card__stats-list">
+            <li class="c-profile-card__stats-list-item">
+              <span class="c-profile-card__stat-number">80K</span>
+              <span class="c-profile-card__stat-label">Followers</span>
+            </li>
+            <li class="c-profile-card__stats-list-item">
+              <span class="c-profile-card__stat-number">803K</span>
+              <span class="c-profile-card__stat-label">Likes</span>
+            </li>
+            <li class="c-profile-card__stats-list-item">
+              <span class="c-profile-card__stat-number">1.4K</span>
+              <span class="c-profile-card__stat-label">Photos</span>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer class="component-wrapper__footer">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/sreeharshrajan/Frontend-Mentor-Challenges"
+          >Sreeharsh Rajan</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
