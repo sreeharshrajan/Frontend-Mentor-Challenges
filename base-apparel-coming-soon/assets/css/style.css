@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -10,9 +16,12 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255),
+    rgba(255, 245, 245)
+  );
 }
 
 img,
@@ -87,6 +96,8 @@ h1 {
   max-width: 1440px;
   position: relative;
   margin-inline: auto;
+  background-image: url("../../images/bg-pattern-desktop.svg");
+  background-size: cover;
 }
 
 .home .logo {
@@ -220,8 +231,9 @@ h1 {
   }
 }
 
-/* button[type="submit"] {
-  background-image: var(--gradient-error);
-  outline: rgb(250, 219, 220) solid 3px;
-  box-shadow: var(--box-shadow-error);
-} */
+@media screen and (max-width: 575px) {
+  .home {
+    background-position: center;
+    background-image: url("../../images/hero-mobile.jpg");
+  }
+}
