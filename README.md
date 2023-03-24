@@ -24,4 +24,5 @@ I have used HTML, CSS and Javascript to create a responsive website. I have also
 
 - [Google Fonts](https://fonts.google.com/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [SCSS](https://sass-lang.com/)
+- [SASS](https://sass-lang.com/)
+- [BEM Naming Convention](https://en.bem.info/methodology/naming-convention/)
