@@ -20,6 +20,8 @@ Here are the challenges that I have completed so far:
 
 ## Technologies Used
 
-I have used HTML and CSS to create a responsive website. I have also used the following tools :
+I have used HTML, CSS and Javascript to create a responsive website. I have also used the following tools :
 
 - [Google Fonts](https://fonts.google.com/)
+- [Tailwind CSS]
+- [SCSS]
