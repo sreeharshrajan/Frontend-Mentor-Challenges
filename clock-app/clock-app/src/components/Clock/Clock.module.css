@@ -1,0 +1,191 @@
+.container {
+  display: flex;
+  height: 50vh;
+  max-width: 111rem;
+  margin: 0 16.5rem;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 57.5rem;
+  height: 100%;
+}
+
+.greeting-container {
+  display: flex;
+  align-items: center;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 1.6rem;
+  letter-spacing: 4px;
+}
+
+.clock-container {
+  display: flex;
+  align-items: flex-start;
+  max-height: 20rem;
+}
+
+.clock {
+  font-size: 20rem;
+  font-weight: 700;
+  letter-spacing: -5px;
+  color: #fff;
+}
+
+.standard-time {
+  color: #fff;
+  font-weight: 300;
+  font-size: 4rem;
+  margin-top: auto;
+  margin-left: 2rem;
+}
+
+.location {
+  margin-top: auto;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 14.5rem;
+  height: 5.5rem;
+  margin-top: auto;
+  margin-left: auto;
+  border-radius: 2.8rem;
+  cursor: pointer;
+}
+
+.button-text {
+  color: #979797;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #303030;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  background-color: #999999;
+}
+
+.display-none {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 57vh;
+    flex-direction: column;
+    margin: 0 6.4rem;
+    padding-top: 13vh;
+  }
+
+  .second-container {
+    max-width: 50rem;
+  }
+
+  .greeting {
+    font-size: 1.8rem;
+    letter-spacing: 3.6px;
+  }
+
+  .clock {
+    font-size: 17.5rem;
+    letter-spacing: -4.38px;
+  }
+
+  .standard-time {
+    font-size: 3.2rem;
+    margin-top: 0;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  .location {
+    margin-top: 0;
+    font-size: 1.8rem;
+    letter-spacing: 3.6px;
+  }
+
+  .button {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    height: 62vh;
+    margin: 0 2.6rem;
+    padding-top: 15vh;
+  }
+
+  .second-container {
+    max-width: 27.8rem;
+  }
+
+  .greeting {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+  }
+
+  .span {
+    display: none;
+  }
+
+  .clock {
+    font-size: 10rem;
+    letter-spacing: -2.5px;
+  }
+
+  .standard-time {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .location {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    align-self: flex-start;
+  }
+
+  .button {
+    margin-bottom: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .button-text {
+    font-size: 1.2rem;
+    letter-spacing: 3.75px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
