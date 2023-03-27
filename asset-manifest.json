@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Challenges/static/css/main.35590d2e.css",
+    "main.js": "/Frontend-Mentor-Challenges/static/js/main.42223823.js",
+    "static/js/787.efa701b3.chunk.js": "/Frontend-Mentor-Challenges/static/js/787.efa701b3.chunk.js",
+    "static/media/bg-image-nighttime.jpg": "/Frontend-Mentor-Challenges/static/media/bg-image-nighttime.a9c730ff6f3e4a40519b.jpg",
+    "static/media/bg-image-daytime.jpg": "/Frontend-Mentor-Challenges/static/media/bg-image-daytime.13c049fcfdc590ddcef0.jpg",
+    "static/media/icon-sun.svg": "/Frontend-Mentor-Challenges/static/media/icon-sun.cb7a2aac3be7bf88b4cf17bd97d62fd2.svg",
+    "index.html": "/Frontend-Mentor-Challenges/index.html",
+    "static/media/icon-refresh.svg": "/Frontend-Mentor-Challenges/static/media/icon-refresh.dd4042c8a2d8493ec9ddb2b52692ad11.svg",
+    "static/media/icon-moon.svg": "/Frontend-Mentor-Challenges/static/media/icon-moon.83b9f0dbe53bfaab2e1c6dc344545e9c.svg",
+    "static/media/icon-arrow-down.svg": "/Frontend-Mentor-Challenges/static/media/icon-arrow-down.4d330a30a2190ce71512b306095fbf41.svg",
+    "static/media/icon-arrow-up.svg": "/Frontend-Mentor-Challenges/static/media/icon-arrow-up.2edf13a064d3fc3382c97696753699f5.svg",
+    "main.35590d2e.css.map": "/Frontend-Mentor-Challenges/static/css/main.35590d2e.css.map",
+    "main.42223823.js.map": "/Frontend-Mentor-Challenges/static/js/main.42223823.js.map",
+    "787.efa701b3.chunk.js.map": "/Frontend-Mentor-Challenges/static/js/787.efa701b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35590d2e.css",
+    "static/js/main.42223823.js"
+  ]
+}
