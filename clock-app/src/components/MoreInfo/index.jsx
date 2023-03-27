@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-import {MoreInfoContainer} from "./MoreInfoComponents"
 import DarkModeContext from "../../utils/dark-mode-context";
 import classes from "./MoreInfo.module.css";
 
@@ -21,8 +20,8 @@ const MoreInfo = (props) => {
   }, [props.data]);
 
   return (
-    <MoreInfoContainer
-      className={`${darkMode && classes["dark-mode"]} ${props.moreInfoActive ? "" : classes["display-none"] }`}
+    <div
+      className= {`${classes["container"]} ${classes["show"]} ${darkMode && classes["dark-mode"]} ${props.moreInfoActive ? "" : classes["display-none"] }`}
     >
       <div
         className={`${classes["second-container"]} ${darkMode && classes["dark-mode"]
@@ -41,7 +40,7 @@ const MoreInfo = (props) => {
           <h2 className={classes.information}>{weekNumber}</h2>
         </div>
       </div>
-    </MoreInfoContainer>
+    </div>
   );
 };
 

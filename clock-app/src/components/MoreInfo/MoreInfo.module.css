@@ -1,5 +1,15 @@
 .container {
+  height: 50vh;
+  background: linear-gradient(#979797, #fff);
+  opacity: 0.95;
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+  bottom: -100%;
+}
 
+.container.show {
+  width: 100%;
+  bottom: 0;
 }
 
 .container.dark-mode {
@@ -16,7 +26,6 @@
   max-width: 84.4rem;
   color: #303030;
   transition: 0.5s all ease-in-out;
-
 }
 
 .second-container.dark-mode {
