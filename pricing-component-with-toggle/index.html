@@ -1,52 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | Pricing Component with Toggle</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Our Pricing</h1>
+      <fieldset class="radio-switch focus-within">
+        <legend class="sr-only">Payment frequency</legend>
+        <div class="radio-switch__inner">
+          <input
+            type="radio"
+            name="pay-type"
+            id="annually"
+            value="annually"
+            checked
+          /><label for="annually" class="radio-switch__label">Annually</label
+          ><input
+            type="radio"
+            name="pay-type"
+            id="monthly"
+            value="monthly"
+          /><label for="monthly" class="radio-switch__label">Monthly</label>
+        </div>
+      </fieldset>
+      <section class="pricing-container">
+        <div class="package">
+          <h2 class="package__type">Basic</h2>
+          <h3 class="package__price">
+            <span class="dollar">&dollar;</span
+            ><span class="price__annually">199.99</span
+            ><span class="price__monthly">19.99</span>
+          </h3>
+          <ul class="package__features">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <a href="" class="btn"> Learn More </a>
+        </div>
+        <div class="package package--highlighted">
+          <h2 class="package__type">Professional</h2>
+          <h3 class="package__price">
+            <span class="dollar">&dollar;</span
+            ><span class="price__annually">249.99</span
+            ><span class="price__monthly">24.99</span>
+          </h3>
+          <ul class="package__features">
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <a href="" class="btn btn--inverted"> Learn More </a>
+        </div>
+        <div class="package">
+          <h2 class="package__type">Master</h2>
+          <h3 class="package__price">
+            <span class="dollar">&dollar;</span
+            ><span class="price__annually">399.99</span
+            ><span class="price__monthly">39.99</span>
+          </h3>
+          <ul class="package__features">
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <a href="" class="btn"> Learn More </a>
+        </div>
+      </section>
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sreeharsh K</a>.
+      </footer>
+    </main>
+  </body>
 </html>

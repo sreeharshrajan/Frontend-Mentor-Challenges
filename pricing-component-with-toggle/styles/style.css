@@ -1,0 +1,345 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 2rem);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #6d708d;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6fe;
+  background-image: url(../images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: 50vw -8vw;
+  background-size: 78vw;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  margin: 1rem 0 2.5rem;
+}
+
+/*----------------------------
+	Attribution footer
+----------------------------*/
+.attribution {
+  font-size: calc($base-font-size * 0.825);
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*----------------------------
+	Visually hidden
+----------------------------*/
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/*----------------------------
+	Toggle control
+----------------------------*/
+.radio-switch {
+  border: none;
+  margin: 2.5rem auto;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 0.825rem;
+
+}
+
+.radio-switch__inner {
+  display: inline-block;
+  position: relative;
+}
+
+.radio-switch__label {
+  display: inline-block;
+  line-height: 2;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.radio-switch input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  height: 100%;
+  margin: 0;
+  opacity: 0.00001;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  z-index: 3;
+}
+
+.radio-switch input:first-of-type {
+  left: 0;
+}
+
+.radio-switch input:last-of-type {
+  right: 0;
+}
+
+.radio-switch input:not(:checked):hover + label {
+  text-decoration: underline;
+}
+
+.radio-switch label:first-of-type {
+  padding-right: 5em;
+}
+
+.radio-switch label:last-child {
+  margin-left: -4.25em;
+  padding-left: 5em;
+}
+
+.radio-switch:focus-within label:first-of-type:after {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #b3b5c6;
+}
+
+.radio-switch label:first-of-type:before,
+.radio-switch label:first-of-type:after {
+  content: "";
+  height: 2em;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  vertical-align: middle;
+}
+
+.radio-switch label:first-of-type:before {
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  transition: right 0.2s ease-in-out;
+  right: 2px;
+  top: 2px;
+  height: calc(2em - (2 * 2px));
+  width: calc(2em - (2 * 2px));
+  z-index: 2;
+}
+
+.radio-switch label:first-of-type:after {
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  border-radius: 1em;
+  margin: 0 1em;
+  transition: background 0.2s ease-in-out;
+  width: 4em;
+}
+
+.radio-switch input:first-of-type:checked ~ label:first-of-type:before {
+  right: calc(2em + 2px);
+}
+
+.radio-switch input:last-of-type:checked ~ label:last-of-type {
+  z-index: 1;
+}
+
+/* 
+	*	ACCESSIBILITY extra: High Contrast Mode
+	* 'color in' the switch knob in high contrast mode by giving it a large border:
+*/
+@media screen and (-ms-high-contrast: active) {
+  .radio-switch label:first-of-type:before {
+    background-color: windowText;
+    border: 1em solid transparent;
+  }
+  .radio-switch:focus-within label:first-of-type:after {
+    outline: 2px solid;
+    outline-offset: 3px;
+  }
+}
+
+/* 
+	! IE11 Hacks to position the switch knob correctly
+*/
+_:-ms-fullscreen,
+:root .radio-switch label:first-of-type:before {
+  right: -0.2em;
+}
+
+_:-ms-fullscreen,
+:root .radio-switch input:first-of-type:checked ~ label:first-of-type:before {
+  right: 1.8em;
+}
+
+/*----------------------------
+	Pricing options container
+----------------------------*/
+.pricing-container {
+  color: #6d708d;
+}
+
+.package {
+  background: #fff;
+  box-shadow: 1rem 1rem 1rem -1rem #b3b5c6;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.package--highlighted {
+  background-color: #494c5f;
+  background-image: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  border: 0;
+  color: #fff;
+  margin: 0;
+}
+
+.package--highlighted .package__price {
+  color: #fff;
+}
+
+.package__type {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  margin: 0;
+}
+
+.package__price {
+  line-height: 1;
+  font-size: clamp(3rem, 16vw, 4.5rem);
+  color: #494c5f;
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.package__price .dollar {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  padding-right: 0.125em;
+}
+
+.package__features {
+  list-style-type: none;
+  align-self: stretch;
+  margin: 0 0 2.5rem;
+  padding: 0;
+}
+
+.package__features li {
+  border-bottom: 1px solid #b3b5c6;
+  padding: 1rem 0.5rem;
+}
+
+.package__features li:first-child {
+  border-top: 1px solid #b3b5c6;
+}
+
+.package .btn {
+  align-self: stretch;
+}
+
+.price__monthly {
+  display: none;
+}
+
+.js-show-monthly .price__monthly {
+  display: block;
+}
+
+.js-show-monthly .price__annually {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  padding: 1em 2em;
+  background: linear-gradient(to bottom right, #a3a8f0, #696fdd);
+  border: 1px solid transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.825rem;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 1;
+  transition: outline 0 ease, all 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  background: #fff;
+  color: #696fdd;
+  border-color: #6d708d;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #b3b5c6;
+}
+
+.btn--inverted {
+  background: #fff;
+  color: #696fdd;
+}
+
+.btn--inverted:active {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn--inverted:focus {
+  box-shadow: 0 0 0 2px #696fdd, 0 0 0 4px white;
+}
+
+/*
+	Larger screens
+*/
+@media screen and (min-width: 44em) {
+  body {
+    background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+    background-position: -9vw bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 34vw, 27vw;
+  }
+  .radio-switch {
+    font-size: 1rem;
+    margin: 3.5rem auto;
+  }
+  .pricing-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 2rem auto 3.5rem;
+  }
+  .pricing-container > * {
+    flex: 1 1 33%;
+  }
+  .package {
+    padding: 2rem;
+  }
+  .package__price {
+    font-size: clamp(2.6rem, 6vw, 4rem);
+  }
+}
