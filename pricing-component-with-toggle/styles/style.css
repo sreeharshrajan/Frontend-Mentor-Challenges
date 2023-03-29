@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f6f6fe;
-  background-image: url(../images/bg-top.svg);
+  background-image: url(/images/bg-top.svg);
   background-repeat: no-repeat;
   background-position: 50vw -8vw;
   background-size: 78vw;
@@ -31,7 +31,6 @@ h1 {
 	Attribution footer
 ----------------------------*/
 .attribution {
-  font-size: calc($base-font-size * 0.825);
   text-align: center;
 }
 
@@ -65,7 +64,19 @@ h1 {
   padding: 0;
   white-space: nowrap;
   font-size: 0.825rem;
-
+  /*
+		* Inner wrapper sets a position relative so I can position absolute the inputs.
+		* display inline-block keeps the wrapper only as wide as the radio switch within.
+	*/
+  /*
+		relative labels to help position the pseudo elements
+		the z-index will be handy later, when the labels that overlap the visual switch UI need to be adjusted to allow for a user to toggle the switch without having to move their mouse/finger to the different sides of the UI
+	*/
+  /*
+	* A toggle can only have 2 options, so use structural pseudo-classes to target them.
+	* the large padding is used to position the labels on top of the visual UI, so the switch UI itself can be mouse clicked or finger tapped to toggle the current option
+	*/
+  /* Move the 2nd label to have a lower z-index, so when that option is toggled, the first label will overlay on top of the Switch ui, and the switch can be pressed again to toggle back to the prevoius state. */
 }
 
 .radio-switch__inner {
@@ -166,6 +177,8 @@ h1 {
   .radio-switch label:first-of-type:before {
     background-color: windowText;
     border: 1em solid transparent;
+    /* firefox doesn't respect the bg color,
+				so the border fills the knob */
   }
   .radio-switch:focus-within label:first-of-type:after {
     outline: 2px solid;
@@ -319,7 +332,7 @@ _:-ms-fullscreen,
 */
 @media screen and (min-width: 44em) {
   body {
-    background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+    background-image: url(/images/bg-bottom.svg), url(/images/bg-top.svg);
     background-position: -9vw bottom, right top;
     background-repeat: no-repeat, no-repeat;
     background-size: 34vw, 27vw;
@@ -342,4 +355,12 @@ _:-ms-fullscreen,
   .package__price {
     font-size: clamp(2.6rem, 6vw, 4rem);
   }
+}
+
+.radio-switch__label {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
 }
