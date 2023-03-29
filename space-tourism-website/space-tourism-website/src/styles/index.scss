@@ -1,0 +1,14 @@
+@import "_base";
+@include animations;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  min-width: 280px;
+  background: $bg-color;
+}
