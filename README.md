@@ -17,11 +17,12 @@ Here are the challenges that I have completed so far:
 - [Challenge 7: Testimonials Grid Section](./testimonials-grid-section/) ([Live](https://testimonials-grid-sreeh.netlify.app/))
 - [Challenge 8: Fylo landing page with two column layout](./fylo-landing-page-with-two-column-layout/) ([Live](https://fylo-landing-sreeh.netlify.app/))
 - [Challenge 9: Base Apparel Coming Soon](./base-apparel-coming-soon) ([Live](https://base-apparel-sreeh.netlify.app/))
-- [Challenge 10:Four card feature section](./four-card-feature-section) ([Live](https://four-card-sreeh.netlify.app/))
-- [Challenge 11:Clock App](./clock-app) ([Live](https://clock-app-sreeh.netlify.app/))
-- [Challenge 12:Pricing Component wit Toggle](./pricing-component-with-toggle) ([Live](https://pricing-component-sreeh.netlify.app/))
-- [Challenge 13:Profile Card Component](./profile-card-component) ([Live](https://profile-card-sreeh.netlify.app/))
-- [Challenge 13:Product Preview Card Component](./product-preview-card-component) ([Live](https://product-preview-sreeh.netlify.app/))
+- [Challenge 10: Four card feature section](./four-card-feature-section) ([Live](https://four-card-sreeh.netlify.app/))
+- [Challenge 11: Clock App](./clock-app) ([Live](https://clock-app-sreeh.netlify.app/))
+- [Challenge 12: Pricing Component with Toggle](./pricing-component-with-toggle) ([Live](https://pricing-component-sreeh.netlify.app/))
+- [Challenge 13: Profile Card Component](./profile-card-component) ([Live](https://profile-card-sreeh.netlify.app/))
+- [Challenge 14: Coding Bootcamp Testimonials Slider](./coding-bootcamp-testimonials-slider) ([Live](https://coding-bootcamp-sreeh.netlify.app/))
+- [Challenge 14: Space Tourism Website](./space-tourism-website) ([Live](https://sapce-tourism-sreeh.netlify.app/)
 
 ## Technologies Used
 

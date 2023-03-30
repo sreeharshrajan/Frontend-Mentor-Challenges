@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/sreeharshrajan/Frontend-Mentor-Challenges/tree/main/coding-bootcamp-testimonials-slider)
+- Live Site URL: [Live](https://coding-bootcamp-sreeh.netlify.app/)
 
 ## My process
 
@@ -46,8 +46,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
