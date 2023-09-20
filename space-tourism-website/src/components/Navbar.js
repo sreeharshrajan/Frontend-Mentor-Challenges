@@ -33,10 +33,10 @@ export default function Navbar() {
   const navlinks = (
     <div className="navbar">
       {windowWidth < mobileWidth ? closeIcon : ''}
-      <NavLink number="00" name="HOME" to="/Space-tourism-website" />
-      <NavLink number="01" name="DESTINATION" to="/Space-tourism-website/destinations" />
-      <NavLink number="02" name="CREW" to="/Space-tourism-website/crew" />
-      <NavLink number="03" name="TECHNOLOGY" to="/Space-tourism-website/technologies" />
+      <NavLink number="00" name="HOME" to="/" />
+      <NavLink number="01" name="DESTINATION" to="/destinations" />
+      <NavLink number="02" name="CREW" to="/crew" />
+      <NavLink number="03" name="TECHNOLOGY" to="/technologies" />
     </div>
   );
 

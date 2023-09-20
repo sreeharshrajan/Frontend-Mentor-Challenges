@@ -22,7 +22,7 @@ Here are the challenges that I have completed so far:
 - [Challenge 12: Pricing Component with Toggle](./pricing-component-with-toggle) ([Live](https://pricing-component-sreeh.netlify.app/))
 - [Challenge 13: Profile Card Component](./profile-card-component) ([Live](https://profile-card-sreeh.netlify.app/))
 - [Challenge 14: Coding Bootcamp Testimonials Slider](./coding-bootcamp-testimonials-slider) ([Live](https://coding-bootcamp-sreeh.netlify.app/))
-- [Challenge 14: Space Tourism Website](./space-tourism-website) ([Live](https://sapce-tourism-sreeh.netlify.app/)
+- [Challenge 14: Space Tourism Website](./space-tourism-website) ([Live](https://fm-space-sreeh.vercel.app/))
 
 ## Technologies Used
 
