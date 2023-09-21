@@ -1,52 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Newsletter Sign-up Form Solution by 0xabdulkhalid for FrontendMentor.io" />
+  <meta name="keywords" content="Frontend Mentor, Newsletter Sign-up Form Challenge, 0xabdulkhalid" />
+  <meta property="og:title" content="Newsletter Sign-up Form - Frontend Mentor" />
+  <meta property="og:description" content="Newsletter Sign-up Form Solution by 0xabdulkhalid for FrontendMentor.io" />
+  <title>Newsletter sign-up | Frontend Mentor</title>
+  <link rel="stylesheet" href="./styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  </noscript>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css" />
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
+  <main>
+    <h1 class="main__sr-only">
+      Newsletter Sign-up
+    </h1>
+    <section class="main__form">
+      <picture class="main__picture-header">
+        <source media="(min-width: 56.25em)" srcset="./images/illustration-sign-up-desktop.svg" />
+        <img src="./images/illustration-sign-up-mobile.svg" alt="" class="main__header-image" width="375"
+          height="451" />
+      </picture>
+      <div class="form__content-wrapper">
+        <h2 class="form__heading">Stay updated!</h2>
+        <p class="form__description">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="form__list">
+          <li class="list__items">Product discovery and building what matters</li>
+          <li class="list__items">Measuring to ensure updates are a success</li>
+          <li class="list__items">And much more!</li>
+        </ul>
+        <form class="main__form-section" novalidate>
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" class="form__email" placeholder="email@company.com"
+            autocomplete="off" />
+          <div id="error-message-container" aria-live="polite" class="form__error-message-container">
+            <span class="error-message" id="error-message">Valid email required</span>
+          </div>
+          <button type="submit" class="submit" id="submit" aria-label="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </section>
+  <section class="main__success-state">
+    <h2 class="success-state__heading">Thanks for subscribing!</h2>
+    <p class="success-state__description">
+      A confirmation email has been sent to <strong>ash@loremcompany.com</strong>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="success-state__dismiss-btn">Dismiss message</button>
+  </section>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+  <footer>
+    Challenge by
+    <a href="https://www.frontendmentor.io/" target="_blank" class="footer__link"
+      aria-describedby="Frontend Mentor Website">Frontend Mentor</a>, Coded by
+    <a href="https://github.com/sreeharshrajan" target="_blank" class="footer__link" rel="noopener noreferrer"
+      aria-describedby="Sreeharsh's Github profile">Sreeharsh</a>
+  </footer>
+  
+  <script src="./script.min.js"></script>
+
 </body>
+
 </html>
